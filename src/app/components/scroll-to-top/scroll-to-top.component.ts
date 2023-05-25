@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-scroll-to-top',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./scroll-to-top.component.scss']
 })
 export class ScrollToTopComponent {
+  showScrollToTop = false;
 
+  @HostListener('window:scroll')
+  onWindowScroll() {
+    this.showScrollToTop = (window.pageYOffset > 200);
+  }
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
 }
