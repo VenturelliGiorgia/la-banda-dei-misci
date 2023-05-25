@@ -1,0 +1,22 @@
+footer{
+    background-color: var(--primary-color);
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img{
+    width: 45px;
+  }
+
+  .logo{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+  
+a{
+    text-decoration: none;
+    color: white;
+}
