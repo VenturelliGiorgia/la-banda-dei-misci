@@ -17,6 +17,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { ReactiveFormsModule } from '@angular/forms';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { PromoComponent } from './components/promo/promo.component';
+import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PromoComponent } from './components/promo/promo.component';
     HomePageComponent,
     JumbotronComponent,
     WelcomeComponent,
-    PromoComponent
+    PromoComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,
