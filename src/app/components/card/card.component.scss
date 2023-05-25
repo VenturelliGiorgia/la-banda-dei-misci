@@ -1,0 +1,28 @@
+.secondary-image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.primary-image{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.my-img-fluid{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.my-btn{
+    width: 100px;
+}
+
+.position-absolute{
+    bottom: 3rem;
+    transform: translateX(-50%);
+
+}
