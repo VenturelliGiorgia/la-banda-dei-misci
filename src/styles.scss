@@ -1,6 +1,6 @@
 :root{
     --primary-color:  #245bad;
-    --secondary-color: #0f2444;
+    --secondary-color: #1a3969;
 }
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,11 +8,13 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 
 .primary-title{
     font-size: 50px;
     color: var(--primary-color);
+    letter-spacing: .2rem;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -35,13 +37,8 @@ section{
     padding: 10px 0;
     border-radius: 0;
     &:hover{
-        background-color: #0f2444;
-        border-color: #0f2444;
-        color: white;
-    }
-    &:active{
-        background-color: #0f2444;
-        border-color: #0f2444;
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
         color: white;
     }
 }
