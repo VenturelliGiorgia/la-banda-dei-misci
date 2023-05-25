@@ -1,0 +1,23 @@
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img class="logo-img" src="https://www.lapolcevera.it/news/foto/media/933_logob-copia.png" alt="Logo">
+                <a class="ms-3 " routerLink="/">La Banda dei Misci</a>
+            </div>
+            <div class="hamburger-menu" (click)="toggleMenu()">
+                <i class="fa-solid fa-bars text-white"></i>
+            </div>
+            <div  [ngClass]="{'open': isMenuOpen}" class="menu">
+                <ul>
+                    <li><a routerLink="/">HOME</a></li>
+                    <li><a routerLink="/users">CHI SIAMO</a></li>
+                    <li><a routerLink="/login">ATTORI</a></li>
+                    <li><a routerLink="/counter">COPIONE</a></li>
+                    <li><a routerLink="/card">NEWS</a></li>
+                    <li><a routerLink="/counter">CONTATTI</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
